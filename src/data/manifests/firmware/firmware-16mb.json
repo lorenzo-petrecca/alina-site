@@ -1,0 +1,27 @@
+{
+    "schema": 1,
+    "flash_size": "16MB",
+    "firm-type": "app",
+    "apps": [
+        {
+            "id": "luna",
+            "display_name": "Luna",
+            "latest": "1.0.0",
+            "versions": [
+                {
+                    "version": "1.0.0",
+                    "build": 10000,
+                    "date": "2025-12-20",
+                    "channel": "stable",
+                    "url": "https://github.com/lorenzo-petrecca/luna/releases/download/v1.0.0/luna-1.0.0-16mb.bin",
+                    "sha256": "...",
+                    "min_boot": "0.1.0",
+                    "min_boot_build": 100,
+                    "notes": "",
+                    "release_url": "https://github.com/lorenzo-petrecca/luna/releases/tag/v1.0.0",
+                    "size_kb": 1024
+                }
+            ]
+        }
+    ]
+}

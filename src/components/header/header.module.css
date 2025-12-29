@@ -1,0 +1,16 @@
+.header {
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid var(--scia-color-border);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--scia-color-bg);
+    width: 100%;
+    min-width: 100%;
+    height: var(--header-fixed-height);
+    box-shadow: 
+        var(--scia-shadow-md);
+    z-index: 500;
+}

@@ -1,0 +1,25 @@
+{
+    "schema": 1,
+    "flash_size": "16MB",
+    "firm-type": "boot",
+    "boots": [
+        {
+            "id": "alina-vista-boot",
+            "display_name": "Alina Vista",
+            "latest": "0.1.0",
+            "versions": [
+                {
+                    "version": "0.1.0",
+                    "build": 100,
+                    "date": "2025-12-10",
+                    "channel": "stable",
+                    "url": "https://github.com/lorenzo-petrecca/Alina_Vista_Boot/releases/download/v0.1.0/alina-vista-boot-0.1.0-16mb.zip",
+                    "sha256": "....",
+                    "notes": "",
+                    "release_url": "https://github.com/lorenzo-petrecca/alina-vista-boot/releases/tag/v0.1.0",
+                    "size_kb": 1024
+                }
+            ]
+        }
+    ]
+}

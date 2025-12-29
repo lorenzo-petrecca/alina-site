@@ -1,66 +1,68 @@
+'use client'
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import { routes } from "@/data/routes";
+import Link from "next/link";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+    const home = routes.filter((item) => item.id === "home")[0];
+
+    return (
+        <main className={`page-main`}>
+            <p className={`scia-paragraph intro ${styles.intro}`}>
+                This is the official documentation for the Alina project. The project was created with the aim of automating and/or easily
+                controlling and managing small crops on balconies, in greenhouses, or in gardens. It is a DIY project.
+                For legal details, the license, and the disclaimer relating to this project, visit the relevant page and the repository on GitHub.
+                This project may include different models and versions of boards/hardware.
+                This site collects official resources, documentation, and binary files.
+            </p>
+            <section id="alina-vista" className={`page-content-section`}>
+                <h1 className={`scia-h1`}>Alina Vista</h1>
+                <section className={`page-content-subsection`}>
+                    <h2 className={`scia-h2`}>What is it</h2>
+                    <p className={`scia-paragraph`}>
+                        Alina Vista is a hardware and software solution designed for the simple and repeatable management of small systems
+                        (greenhouses, balconies, home gardens). The goal is to have a system that can be controlled locally
+                        (via display and buttons), configured, and updated over time.
+                    </p>
+                </section>
+
+                <section className={`page-content-subsection`}>
+                    <h2 className={`scia-h2`}>What it is used for</h2>
+                    <ul className={`page-content-list page-content-ulist`}>
+                        <li>Programmed and/or sensor-based irrigation.</li>
+                        <li>Monitoring of parameters (e.g., soil moisture).</li>
+                        <li>Local interface (display menu) and persistent settings.</li>
+                        <li>Firmware updates via OTA and USB (with documented procedures).</li>
+                    </ul>
+                </section>
+
+                <section className={`page-content-subsection`}>
+                    <h2 className={`scia-h2`}>Resources</h2>
+                    <ul className={`page-content-list page-content-ulist`}>
+                        {home?.children?.items?.filter((item) => item.id === "alina-vista")[0]?.children?.items.map((r) => (
+                            <li key={r.id}>
+                                {r.label}:
+                                <Link
+                                    className={`scia-color-primary ${styles.resourceLink}`}
+                                    href={r.href}
+                                    target={r.external.target}
+                                    rel="noreferrer"
+                                >
+                                    {r.href}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </section>
+
+                <section className={`page-content-subsection`}>
+                    <div className="blockquote scia-blockquote-warning">
+                        <p className="blockquote-paragraph">Note: links to repositories and documentation may change as the project evolves.</p>
+                    </div>
+                </section>
+            </section>
+        </main>
+    );
 }

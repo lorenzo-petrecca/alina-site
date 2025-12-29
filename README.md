@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Alina – Website
 
-## Getting Started
+This repository contains the source code for the **Alina project website**.
 
-First, run the development server:
+The website serves as:
+- project overview and documentation
+- firmware and bootloader downloads
+- installation and usage tutorials
+- legal and licensing information
+
+It does **not** collect user data, use analytics, or require authentication.
+
+---
+
+## Project Scope
+
+This repository contains **only the website**.
+
+Other parts of the Alina Vista project (firmware, bootloader, hardware designs) are hosted in separate repositories and referenced from the site.
+
+---
+
+## Legal and Licensing
+
+The website source code is provided for informational purposes.
+
+Licensing details for:
+- the website
+- third-party dependencies
+- software and hardware components of the project
+
+are documented in the **Legal** section of the site and in the corresponding files within the project repositories.
+
+See:
+- `/legal` page on the website
+- third-party license documentation generated during development
+
+---
+
+## Development
+
+This is a Next.js project.
+
+Basic commands:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
