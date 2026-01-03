@@ -259,6 +259,11 @@ install_windows.bat COM5`}
                         <code>{`ls /dev/tty.*`}</code>
                     </pre>
                     <p className="scia-paragraph">Tipical: <code className="scia-code">/dev/tty.usbserial-XXXX</code> o <code className="scia-code">/dev/tty.SLAB_USBtoUART</code></p>
+                    <p className="scia-paragraph">or</p>
+                    <pre className={`scia-code-block`}>
+                        <code>{`ls /dev/cu.*`}</code>
+                    </pre>
+                    <p className="scia-paragraph">Tipical: <code className="scia-code">/dev/cu.usbmodemXXXX</code></p>
 
                     <h4 className={`scia-h4 scia-margin-t-12`}>Linux</h4>
                     <pre className={`scia-code-block`}>
@@ -291,6 +296,7 @@ install_windows.bat COM5`}
                             <ul className={`page-content-list`}>
                                 <li><code className="scia-code">bootloader.bin</code></li>
                                 <li><code className="scia-code">partitions.bin</code></li>
+                                <li><code className="scia-code">boot_app0.bin</code></li>
                                 <li><code className="scia-code">alina-boot-ui.bin</code></li>
                             </ul>
                         </li>

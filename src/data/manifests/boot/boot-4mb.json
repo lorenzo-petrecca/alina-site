@@ -6,8 +6,19 @@
         {
             "id": "alina-vista-boot",
             "display_name": "Alina Vista",
-            "latest": "0.1.0",
+            "latest": "0.2.0",
             "versions": [
+                {
+                    "version": "0.2.0",
+                    "build": 200,
+                    "date": "2026-01-03",
+                    "channel": "beta",
+                    "url": "https://github.com/lorenzo-petrecca/Alina_Vista_Boot/releases/download/v0.2.0/alina-vista-boot-0.2.0-4mb.zip",
+                    "sha256": "",
+                    "notes": "",
+                    "release_url": "https://github.com/lorenzo-petrecca/Alina_Vista_Boot/releases/tag/v0.2.0",
+                    "size_kb": 620
+                },
                 {
                     "version": "0.1.0",
                     "build": 100,
